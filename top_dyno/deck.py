@@ -17,3 +17,10 @@ def generate_random_dynos_data() -> list[dict]:
         }
         for dyno_name in DYNO_NAMES
     ]
+
+
+def create_random_dyno_deck(filepath: str) -> None:
+
+    generate_dynos = generate_random_dynos_data()
+
+    write_json(filepath, generate_dynos)
