@@ -1,5 +1,5 @@
 # Top_Dyno
 
-## Reagra de negócio:
+## Regra de negócio:
 
 ![regra_de_negocio](./public/image/super-trunfo.png)
