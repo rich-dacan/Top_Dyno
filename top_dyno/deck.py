@@ -7,17 +7,20 @@ DYNO_NAMES = ('Parasaurolophus', 'Stegosaurus',
 
 
 def generate_random_dynos_data() -> list[dict]:
-    dyno_cards = []
 
-    for dyno_name in DYNO_NAMES:
-
-        dyno_dict = {
+    return [
+        {
             'name': dyno_name,
             'strength': random.randint(1, 10),
             'agility': round(random.uniform(0, 10), 1),
             'height': round(random.uniform(0, 10), 2)
         }
+        for dyno_name in DYNO_NAMES
+    ]
 
-        dyno_cards.append(dyno_dict)
 
-    return dyno_cards
+def create_random_dyno_deck(filepath: str) -> None:
+
+    generate_dynos = generate_random_dynos_data()
+
+    write_json(filepath, generate_dynos)

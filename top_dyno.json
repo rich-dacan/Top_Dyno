@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Parasaurolophus",
+    "strength": 2,
+    "agility": 6.8,
+    "height": 3.28
+  },
+  {
+    "name": "Stegosaurus",
+    "strength": 10,
+    "agility": 5.0,
+    "height": 9.22
+  },
+  {
+    "name": "Giganotosaurus",
+    "strength": 10,
+    "agility": 0.5,
+    "height": 4.52
+  },
+  {
+    "name": "Triceratops",
+    "strength": 9,
+    "agility": 9.3,
+    "height": 7.91
+  },
+  {
+    "name": "Velociraptor",
+    "strength": 10,
+    "agility": 0.9,
+    "height": 9.71
+  },
+  {
+    "name": "Tyrannosaurus-Rex",
+    "strength": 5,
+    "agility": 1.8,
+    "height": 4.36
+  }
+]

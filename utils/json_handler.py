@@ -9,4 +9,4 @@ def read_json(filepath: str) -> list[dict]:
 
 def write_json(filepath: str, data: list[dict]) -> None:
     with open(filepath, 'w') as file:
-        json.dump(data, file, indent=2, ascii=False)
+        json.dump(data, file, indent=2, ensure_ascii=False)
