@@ -1,6 +1,6 @@
-
 import random
-from utils import write_json, read_json
+
+from utils import read_json, write_json
 
 DYNO_NAMES = ('Parasaurolophus', 'Stegosaurus',
               'Giganotosaurus', 'Triceratops', 'Velociraptor', 'Tyrannosaurus-Rex')
@@ -24,3 +24,17 @@ def create_random_dyno_deck(filepath: str) -> None:
     generate_dynos = generate_random_dynos_data()
 
     write_json(filepath, generate_dynos)
+
+
+def generate_players_decks(filepath: str):
+
+    dyno_deck = read_json(filepath)
+
+    split_deck = len(dyno_deck) // 2
+
+    random.shuffle(dyno_deck)
+
+    # retornar uma tupla com 2 decks
+    # um deck começa do inicio e vai até a metade (split_deck) e o segundo faz o inverso.
+
+    return (dyno_deck[:split_deck], dyno_deck[split_deck:])
