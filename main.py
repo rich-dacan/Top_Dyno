@@ -8,13 +8,15 @@ def main():
 
     # top_dyno.create_random_dyno_deck(FILE_PATH)
 
-    decks = top_dyno.generate_players_decks(FILE_PATH)
+    p1_deck, p2_deck = top_dyno.generate_players_decks(FILE_PATH)
 
-    print(f'{decks[0]} \n')
-    print(decks[1])
+    # print(f'{p1_deck} \n')
+    # print(p2_deck)
+
+    print(top_dyno.get_random_attr(p1_deck[0]))
 
 
 if __name__ == "__main__":
     main()
 
-    # 34:24
+    # 36:34
